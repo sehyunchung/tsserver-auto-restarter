@@ -1,6 +1,6 @@
 {
-  "name": "tsserver-restarter",
-  "displayName": "tsserver-restarter",
+  "name": "tsserver-auto-restarter",
+  "displayName": "TSServer Auto Restarter",
   "description": "Restart tsserver when you move to another file...",
   "version": "0.0.1",
   "engines": {
@@ -17,23 +17,23 @@
   "contributes": {
     "commands": [
       {
-        "command": "tsserverRestarter.enable",
+        "command": "tsserverAutoRestarter.enable",
         "title": "Enable",
-        "category": "TSServer Restarter"
+        "category": "TSServer Auto Restarter"
       },
       {
-        "command": "tsserverRestarter.disable",
+        "command": "tsserverAutoRestarter.disable",
         "title": "Disable",
-        "category": "TSServer Restarter"
+        "category": "TSServer Auto Restarter"
       }
     ],
     "configuration": {
-      "title": "TSServer Restarter",
+      "title": "TSServer Auto Restarter",
       "properties": {
-        "tsserverRestarter.enabled": {
+        "tsserverAutoRestarter.enabled": {
           "type": "boolean",
           "default": false,
-          "description": "Enable/disable automatic restart of TypeScript server on tab change."
+          "description": "Enable/disable automatic restart of TypeScript server on active editor change."
         }
       }
     }

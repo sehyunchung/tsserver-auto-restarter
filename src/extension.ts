@@ -14,16 +14,16 @@ export function activate(context: vscode.ExtensionContext) {
   );
 
   context.subscriptions.push(
-    vscode.commands.registerCommand("tsserverRestarter.enable", enable)
+    vscode.commands.registerCommand("tsserverAutoRestarter.enable", enable)
   );
 
   context.subscriptions.push(
-    vscode.commands.registerCommand("tsserverRestarter.disable", disable)
+    vscode.commands.registerCommand("tsserverAutoRestarter.disable", disable)
   );
 }
 
 function restartTSServer() {
-  const config = vscode.workspace.getConfiguration("tsserverRestarter");
+  const config = vscode.workspace.getConfiguration("tsserverAutoRestarter");
   const restartTSServerOnTabChange = config.get<boolean>("enabled");
   if (!restartTSServerOnTabChange) {
     return;
@@ -32,14 +32,14 @@ function restartTSServer() {
 }
 
 async function enable() {
-  const config = vscode.workspace.getConfiguration("tsserverRestarter");
+  const config = vscode.workspace.getConfiguration("tsserverAutoRestarter");
   await config.update("enabled", true, vscode.ConfigurationTarget.Global);
-  vscode.window.showInformationMessage("TSServer Restarter: Enabled");
+  vscode.window.showInformationMessage("TSServer Auto Restarter: Enabled");
 }
 
 async function disable() {
-  const config = vscode.workspace.getConfiguration("tsserverRestarter");
+  const config = vscode.workspace.getConfiguration("tsserverAutoRestarter");
   await config.update("enabled", false, vscode.ConfigurationTarget.Global);
-  vscode.window.showInformationMessage("TSServer Restarter: Disabled");
+  vscode.window.showInformationMessage("TSServer Auto Restarter: Disabled");
 }
 export function deactivate() {}
