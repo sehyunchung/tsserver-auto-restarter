@@ -17,10 +17,26 @@
   "contributes": {
     "commands": [
       {
-        "command": "tsserver-restarter.helloWorld",
-        "title": "Hello World"
+        "command": "tsserverRestarter.enable",
+        "title": "Enable",
+        "category": "TSServer Restarter"
+      },
+      {
+        "command": "tsserverRestarter.disable",
+        "title": "Disable",
+        "category": "TSServer Restarter"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "TSServer Restarter",
+      "properties": {
+        "tsserverRestarter.enabled": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable/disable automatic restart of TypeScript server on tab change."
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "pnpm run package",
