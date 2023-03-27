@@ -4,7 +4,9 @@ Automatically restarts the TSServer when you move to another ts/tsx file.
 
 ## Installation
 
-The extension is not yet published to the marketplace. You can install it by cloning this repository and running the following
+~~The extension is not yet published to the marketplace.~~ Published now. You can install it via [marketplace page](https://marketplace.visualstudio.com/items?itemName=SehyunChung.tsserver-auto-restarter).
+
+Also can install it by cloning this repository and running the following:
 
 ```bash
 npm i
