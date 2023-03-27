@@ -10,6 +10,7 @@
     "name": "Sehyun Chung",
     "email": "hi@sehyunchung.dev"
   },
+  "publisher": "SehyunChung",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.76.0"
