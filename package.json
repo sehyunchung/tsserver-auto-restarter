@@ -4,7 +4,7 @@
   "description": "Restart tsserver when you move to another ts(x) file",
   "repository": {
     "type": "git",
-    "url": "git@github.com:sehyunchung/tsserver-auto-restarter.git"
+    "url": "https://github.com/sehyunchung/tsserver-auto-restarter.git"
   },
   "author": {
     "name": "Sehyun Chung",
