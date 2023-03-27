@@ -14,11 +14,11 @@ This extension is... pretty basic. It's just restarting the TSServer when you mo
 
 You can install it via [marketplace page](https://marketplace.visualstudio.com/items?itemName=SehyunChung.tsserver-auto-restarter).
 
-## VSIX
+### VSIX
 
 Check out our [Releases](https://github.com/sehyunchung/tsserver-auto-restarter/releases) and download the latest `.vsix` file.
 
-## Hard Way
+### Hard Way
 
 Also can install it by cloning this repository and running the following:
 
