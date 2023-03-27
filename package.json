@@ -1,7 +1,15 @@
 {
   "name": "tsserver-auto-restarter",
   "displayName": "TSServer Auto Restarter",
-  "description": "Restart tsserver when you move to another file...",
+  "description": "Restart tsserver when you move to another ts(x) file",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sehyunchung/tsserver-auto-restarter.git"
+  },
+  "author": {
+    "name": "Sehyun Chung",
+    "email": "hi@sehyunchung.dev"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.76.0"
@@ -64,5 +72,6 @@
     "webpack": "^5.76.3",
     "webpack-cli": "^5.0.1",
     "@vscode/test-electron": "^2.3.0"
-  }
+  },
+  "license": "MIT"
 }
